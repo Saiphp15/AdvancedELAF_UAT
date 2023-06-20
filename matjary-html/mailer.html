@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Matjary</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+
+    <!-- Font Styles -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* MATJARY MAILER CSS STARTS */
+
+        .mailer {
+            padding: 3rem;
+            font-family: 'Kodchasan', sans-serif;
+        }
+
+        .mailer-title h3 {
+            color: #E63A7B;
+            font-weight: 800;
+            border-bottom: 1px solid #44A3E6;
+            padding-bottom: 1rem;
+        }
+
+        .mailer-title span {
+            color: #8C52D6;
+        }
+
+        .mailer-cong-msg h4 {
+            color: #E63A7B;
+            font-weight: 400;
+            font-size: 1.8rem;
+        }
+
+        .mailer-cong-msg p {
+            color: #E63A7B;
+            font-weight: 400;
+            font-size: 1.25rem;
+        }
+
+        .mailer-creds {
+            padding-top: 2rem;
+        }
+
+        .mailer-creds h4 {
+            color: #5294F7;
+        }
+
+        .mailer-creds h5 {
+            font-size: 1.5rem;
+            padding-top: 1rem;
+        }
+
+        p.mailer-email {
+            color: #5294F7;
+            font-size: 1.4rem;
+            font-weight: 500;
+        }
+
+        span.mailer-pass {
+            color: #5294F7;
+        }
+
+        .mailer-regards h4 {
+            margin-top: 4rem;
+            color: #ff6600;
+            font-size: 1.4rem;
+        }
+
+        .mailer-regards p {
+            color: #ff6600;
+            font-size: 1.4rem;
+        }
+
+        .mailer-footer-title h4 {
+            bottom: 0;
+            position: absolute;
+        }
+
+        .mailer-footer-title {
+            color: #ff6600;
+        }
+
+        .credit-border {
+            border-bottom: 1px solid #43A2E6;
+        }
+
+        .credit-title h3 {
+            color: #43A2E6;
+            padding-top: 2rem;
+        }
+
+        .credit-title small {
+            color: #43A2E6;
+        }
+
+        .footer-disclaimer {
+            color: #43A2E6;
+        }
+
+        .cust-title {
+            font-family: 'Quicksand', sans-serif;
+            color: #FFCE3A;
+        }
+
+        .mailer-creds h5 {
+            color: #E63A7B;
+            font-size: 1.25rem;
+        }
+
+        p.inv-total-amt,
+        p.inv-pay-status {
+            color: #E63A7B;
+        }
+
+        span.final-pay-status {
+            color: #5294F7;
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 700;
+        }
+
+        @media (max-width: 767px) {
+            .mailer-title h3 {
+                text-align: center;
+            }
+
+            .mailer-cong-msg h4 {
+                font-size: 1.25rem !important;
+                text-align: center;
+            }
+
+            .mailer-cong-msg p {
+                font-size: 1.25rem !important;
+                text-align: center;
+            }
+
+            .mailer-logo img {
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+            }
+
+            .mailer-creds h4 {
+                font-size: 1.25rem;
+            }
+
+            .mailer-creds h5 {
+                font-size: 1rem;
+            }
+
+            p.mailer-email {
+                font-size: 1rem !important;
+            }
+
+            .mailer-creds h5 {
+                font-size: 1rem !important;
+                padding-top: 0.8rem !important;
+            }
+
+            .mailer-regards h4 {
+                font-size: 1.25rem !important;
+            }
+
+            .mailer-regards p {
+                font-size: 1.25rem !important;
+            }
+
+            .mailer-footer-title h4 {
+                position: relative !important;
+                text-align: center;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mailer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-xl-10">
+                    <div class="mailer-title">
+                        <h3>User Registered <span>[Title to appear here]</span></h3>
+                    </div>
+
+                    <div class="mailer-cong-msg">
+                        <h4>Congratulations!</h4>
+                        <p>Your localhost account setup has completed.</p>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-2">
+                    <div class="mailer-logo">
+                        <img src="image/matjary-mailer-logo.png" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="mailer-creds">
+                <h4>Please find your details below.</h4>
+                <h5>Login Address:</h5>
+                <p class="mailer-email">shraddha.jilkar@gmail.com</p>
+
+                <h5>Password: <span class="mailer-pass">Admin@123</span></h5>
+            </div>
+
+            <div class="mailer-regards">
+                <h4>Best Regards,</h4>
+                <p>Sultan</p>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-2">
+                    <div class="mailer-footer">
+                        <img class="img-fluid" src="image/mailer-footer-logo.png" />
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-xl-10">
+                    <div class="mailer-footer-title">
+                        <h4>Target – Make Business Lockdown proof</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row credit-border">
+                <div class="credit-title">
+                    <h3>Team Matjary</h3>
+                    <small>Powered by Advanced Elaf</small>
+                </div>
+            </div>
+
+            <div class="footer-disclaimer">
+                <p>The content of this message is confidential. If you have received it by mistake, please inform us by
+                    an
+                    email reply and then delete the message. It is forbidden to copy, forward, or in any way reveal the
+                    contents of this message to anyone. The integrity and security of this email cannot be guaranteed
+                    over
+                    the Internet. Therefore, the sender will not be held liable for any damage caused by the message.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="mailer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-xl-10">
+                    <div class="mailer-title">
+                        <h3>User Registered <span>[Title to appear here]</span></h3>
+                    </div>
+
+                    <div class="mailer-cong-msg">
+                        <h4>Congratulations!</h4>
+                        <p>We appreciate you for your interest shown in MATJARY!</p>
+                        <p>The following is the invoice details, not receipt. In regards to the purchase with MATJARY.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-2">
+                    <div class="mailer-logo">
+                        <img src="image/matjary-mailer-logo.png" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="mailer-creds">
+                <h5>Invoice To <span class="cust-title">[CUSTOMER NAME]</span></h5>
+
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">Sr. No.</th>
+                                <th scope="col">Particulars</th>
+                                <th scope="col">Billing Type</th>
+                                <th scope="col">Rate</th>
+                                <th scope="col">Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>3 months – painting.sa-matjary.com</td>
+                                <td>Monthly</td>
+                                <td>SAR 459.99</td>
+                                <td>SAR 459.99</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"></th>
+                                <td></td>
+                                <td></td>
+                                <td>Total</td>
+                                <td>SAR 459.99</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"></th>
+                                <td></td>
+                                <td></td>
+                                <td>GST</td>
+                                <td>18%</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row"></th>
+                                <td></td>
+                                <td></td>
+                                <td>Amount</td>
+                                <td>SAR 459.99</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p class="inv-total-amt">Total Amount: Four Hundred Dollars Only.</p>
+                <p class="inv-pay-status">Payment Status: <span class="final-pay-status">PAID</span></p>
+            </div>
+
+
+
+            <div class="mailer-regards">
+                <h4>Best Regards,</h4>
+                <p>Sultan</p>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-2">
+                    <div class="mailer-footer">
+                        <img class="img-fluid" src="image/mailer-footer-logo.png" />
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-xl-10">
+                    <div class="mailer-footer-title">
+                        <h4>Target – Make Business Lockdown proof</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row credit-border">
+                <div class="credit-title">
+                    <h3>Team Matjary</h3>
+                    <small>Powered by Advanced Elaf</small>
+                </div>
+            </div>
+
+            <div class="footer-disclaimer">
+                <p>The content of this message is confidential. If you have received it by mistake, please inform us by
+                    an
+                    email reply and then delete the message. It is forbidden to copy, forward, or in any way reveal the
+                    contents of this message to anyone. The integrity and security of this email cannot be guaranteed
+                    over
+                    the Internet. Therefore, the sender will not be held liable for any damage caused by the message.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
