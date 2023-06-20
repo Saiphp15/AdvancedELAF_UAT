@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Basic Page Info -->
+    <meta charset="utf-8">
+    <title>Manage Admin Users - My Store Admin | Matjary</title>
+
+    <!-- Site favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="src/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="src/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="src/images/favicon-16x16.png">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="vendors/styles/core-ar.css">
+    <link rel="stylesheet" type="text/css" href="vendors/styles/icon-font.min.css">
+    <link rel="stylesheet" type="text/css" href="src/plugins/datatables/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="src/plugins/datatables/css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="vendors/styles/style-ar.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119386393-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-119386393-1');
+    </script>
+</head>
+
+<body>
+    <div class="pre-loader">
+        <div class="pre-loader-box">
+            <div class="loader-logo"><img src="vendors/images/matjary_logo.png" alt=""></div>
+            <div class='loader-progress' id="progress_div">
+                <div class='bar' id='bar1'></div>
+            </div>
+            <div class='percent' id='percent1'>0%</div>
+            <div class="loading-text">
+                Loading...
+            </div>
+        </div>
+    </div>
+
+    <div class="header">
+        <div class="header-left">
+            <div class="menu-icon dw dw-menu"></div>
+            <div class="search-toggle-icon dw dw-search2" data-toggle="header_search"></div>
+            <div class="header-search">
+                <form>
+                    <div class="form-group mb-0">
+                        <i class="dw dw-search2 search-icon"></i>
+                        <input type="text" class="form-control search-input" placeholder="Search Here">
+                        <div class="dropdown">
+                            <a class="dropdown-toggle no-arrow" href="#" role="button" data-toggle="dropdown">
+                                <i class="ion-arrow-down-c"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <div class="form-group row">
+                                    <label class="col-sm-12 col-md-2 col-form-label">From</label>
+                                    <div class="col-sm-12 col-md-10">
+                                        <input class="form-control form-control-sm form-control-line" type="text">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-12 col-md-2 col-form-label">To</label>
+                                    <div class="col-sm-12 col-md-10">
+                                        <input class="form-control form-control-sm form-control-line" type="text">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-12 col-md-2 col-form-label">Subject</label>
+                                    <div class="col-sm-12 col-md-10">
+                                        <input class="form-control form-control-sm form-control-line" type="text">
+                                    </div>
+                                </div>
+                                <div class="text-right">
+                                    <button class="btn btn-primary">Search</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="header-right align-items-center">
+            <div class="user-notification">
+                <div class="dropdown">
+                    <a class="dropdown-toggle no-arrow" href="#" role="button" data-toggle="dropdown">
+                        <i class="icon-copy dw dw-notification"></i>
+                        <span class="badge notification-active"></span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <div class="notification-list mx-h-350 customscroll">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="vendors/images/img.jpg" alt="">
+                                        <h3>John Doe</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed...</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="vendors/images/photo1.jpg" alt="">
+                                        <h3>Lea R. Frith</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed...</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="vendors/images/photo2.jpg" alt="">
+                                        <h3>Erik L. Richards</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed...</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="vendors/images/photo3.jpg" alt="">
+                                        <h3>John Doe</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed...</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="vendors/images/photo4.jpg" alt="">
+                                        <h3>Renee I. Hansen</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed...</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="vendors/images/img.jpg" alt="">
+                                        <h3>Vicki M. Coleman</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed...</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="user-info-dropdown">
+                <div class="dropdown">
+                    <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+                        <span class="user-icon">
+                            <img src="vendors/images/photo1.jpg" alt="">
+                        </span>
+                        <span class="user-name">Ross C. Lopez</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
+                        <a class="dropdown-item" href="profile.html"><i class="dw dw-user1"></i> Profile</a>
+                        <a class="dropdown-item" href="profile.html"><i class="dw dw-settings2"></i> Setting</a>
+                        <a class="dropdown-item" href="faq.html"><i class="dw dw-help"></i> Help</a>
+                        <a class="dropdown-item" href="login.html"><i class="dw dw-logout"></i> Log Out</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="login-menu ml-3">
+                <ul>
+                    <li><a href="manage-admin-users.html">EN</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="left-side-bar">
+        <div class="brand-logo">
+            <a href="index-ar.html">
+                <img src="vendors/images/matjary_logo.png" alt="" class="dark-logo">
+                <img src="vendors/images/matjary_logo.png" alt="" class="light-logo">
+            </a>
+            <div class="close-sidebar" data-toggle="left-sidebar-close">
+                <i class="ion-close-round"></i>
+            </div>
+        </div>
+        <div class="menu-block customscroll">
+            <div class="sidebar-menu">
+                <ul id="accordion-menu">
+                    <li class="dropdown">
+                        <a href="index-ar.html" class="single-menu">
+                            <span class="mtext">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:;" class="dropdown-toggle">
+                            <span class="mtext">Manage</span>
+                        </a>
+                        <ul class="submenu">
+                            <li><a href="#">Manage Home Page</a></li>
+                            <li><a href="tags-ar.html">Tags</a></li>
+                            <li><a href="seo-ar.html">SEO</a></li>
+                            <li><a href="advertisements-ar.html">Advertisements</a></li>
+                            <li><a href="templates-ar.html">Templates</a></li>
+                            <li><a href="banners-ar.html">Banners</a></li>
+                            <li><a href="newsletters-ar.html">Newsletters</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:;" class="dropdown-toggle">
+                            <span class="mtext">Orders</span>
+                        </a>
+                        <ul class="submenu">
+                            <li><a href="order-management-ar.html">Order Management</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="create-pickup-ar.html" class="single-menu">
+                            <span class="mtext">Create Pickup</span>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:;" class="dropdown-toggle">
+                            <span class="mtext">Products</span>
+                        </a>
+                        <ul class="submenu">
+                            <li><a href="add-products-ar.html">Add Products</a></li>
+                            <li><a href="all-products-ar.html">All Products</a></li>
+                            <li><a href="product-categories-ar.html">Product Categories</a></li>
+                            <li><a href="product-inventory-ar.html">Product Inventory</a></li>
+                            <li><a href="product-attributes-ar.html">Product Attributes</a></li>
+                            <li><a href="gift-cards-ar.html">Gift Cards</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:;" class="dropdown-toggle">
+                            <span class="mtext">Reports</span>
+                        </a>
+                        <ul class="submenu">
+                            <li><a href="product-reports-ar.html">Product Reports</a></li>
+                            <li><a href="product-sku-reports-ar.html">Product SKU Reports</a></li>
+                            <li><a href="sales-reports-ar.html">Sales Report</a></li>
+                            <li><a href="monthly-sales-report-ar.html">Monthly Sales Report</a></li>
+                            <li><a href="#">Tax by Rate Report</a></li>
+                            <li><a href="user-report-ar.html">User Report</a></li>
+                            <li><a href="user-activity-report-ar.html">User Activity Report</a></li>
+                            <li><a href="#">Promo Code Report</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:;" class="dropdown-toggle">
+                            <span class="mtext">Coupon Code</span>
+                        </a>
+                        <ul class="submenu">
+                            <li><a href="add-coupon-code-ar.html">Add Coupon Code</a></li>
+                            <li><a href="view-coupon-code-ar.html">View Coupon Code</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:;" class="dropdown-toggle">
+                            <span class="mtext">Feedbacks</span>
+                        </a>
+                        <ul class="submenu">
+                            <li><a href="product-feedbacks-ar.html">Product Feedbacks</a></li>
+                            <li><a href="website-feedbacks-ar.html">Website Feedbacks</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:;" class="dropdown-toggle">
+                            <span class="mtext">Users</span>
+                        </a>
+                        <ul class="submenu">
+                            <li><a href="manage-users-ar.html">Manage Users</a></li>
+                            <li><a href="manage-admin-users-ar.html">Manage Admin Users</a></li>
+                            <li><a href="gift-card-users-ar.html">Gift Card Users</a></li>
+                            <li><a href="newsletter-subscribers-ar.html">Newsletter Subscribers</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:;" class="dropdown-toggle">
+                            <span class="mtext">Payment Management</span>
+                        </a>
+                        <ul class="submenu">
+                            <li><a href="payment-settings-ar.html">Payment Settings</a></li>
+                            <li><a href="refund-request-ar.html">Refund Request</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:;" class="dropdown-toggle">
+                            <span class="mtext">Settings</span>
+                        </a>
+                        <ul class="submenu">
+                            <li><a href="general-settings-ar.html">General Settings</a></li>
+                            <li><a href="shipping-settings-ar.html">Shipping Request</a></li>
+                            <li><a href="tax-settings-ar.html">Tax Settings</a></li>
+                            <li><a href="#">Appearance Settings</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:;" class="dropdown-toggle">
+                            <span class="mtext">Imports</span>
+                        </a>
+                        <ul class="submenu">
+                            <li><a href="import-products-ar.html">Import Products</a></li>
+                            <li><a href="import-product-images-ar.html">Import Product Images</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:;" class="dropdown-toggle">
+                            <span class="mtext">CMS</span>
+                        </a>
+                        <ul class="submenu">
+                            <li><a href="website-content-ar.html">Website Content</a></li>
+                            <li><a href="email-templates-ar.html">Email Templates</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="admin-guide-ar.html" class="single-menu">
+                            <span class="mtext">Admin Guide</span>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:;" class="single-menu">
+                            <span class="mtext">Domain/Subdomain</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-menu-overlay"></div>
+
+    <div class="main-container">
+        <div class="pd-ltr-20 xs-pd-20-10">
+            <div class="min-height-200px">
+                <div class="page-header">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <div class="title">
+                                <h4>Manage Admin Users</h4>
+                            </div>
+                            <nav aria-label="breadcrumb" role="navigation">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Users</li>
+                                    <li class="breadcrumb-item active" aria-current="page">Manage Admin Users</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row clearfix">
+                    <div class="col-lg-12 col-md-12 col-sm-12 mb-30">
+                        <div class="pd-20 card-box">
+
+                            <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-6">
+                                        <h5 class="h4 text-blue mb-20">Administrator Users List</h5>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 text-left">
+                                        <div class="dataTables_length" id="DataTables_Table_0_length">
+                                            <label>Show <select name="DataTables_Table_0_length"
+                                                    aria-controls="DataTables_Table_0"
+                                                    class="custom-select custom-select-sm form-control form-control-sm">
+                                                    <option value="10">10</option>
+                                                    <option value="25">25</option>
+                                                    <option value="50">50</option>
+                                                    <option value="-1">All</option>
+                                                </select> entries</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-2">
+                                        <select class="custom-select col-12 mb-2">
+                                            <option selected="">Username</option>
+                                            <option value="1">Email</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="input-group mb-3">
+                                            <input type="search" class="form-control" placeholder="Enter details">
+                                            <div class="input-group-append">
+                                                <button class="btn btn-primary" type="button">Search</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7 text-left">
+                                        <a href="add-admin-users-ar.html" class="btn btn-primary mb-2">Add Admin User</a>
+                                        <a href="#" class="btn btn-primary mb-2">Clear</a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="table-responsive">
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Sr.No.</th>
+                                                        <th scope="col">Username</th>
+                                                        <th scope="col">Email</th>
+                                                        <th scope="col">Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td>username1</td>
+                                                        <td>username1@gmail.com</td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <a class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle"
+                                                                    href="#" role="button" data-toggle="dropdown">
+                                                                    <i class="dw dw-more"></i>
+                                                                </a>
+                                                                <div
+                                                                    class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
+                                                                    <a class="dropdown-item" href="edit-admin-users.html"><i
+                                                                            class="dw dw-edit2"></i>
+                                                                        Edit</a>
+                                                                    <a class="dropdown-item" href="#"><i
+                                                                            class="dw dw-delete-3"></i>
+                                                                        Delete</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">2</th>
+                                                        <td>username2</td>
+                                                        <td>username2@gmail.com</td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <a class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle"
+                                                                    href="#" role="button" data-toggle="dropdown">
+                                                                    <i class="dw dw-more"></i>
+                                                                </a>
+                                                                <div
+                                                                    class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
+                                                                    <a class="dropdown-item" href="edit-admin-users.html"><i
+                                                                            class="dw dw-edit2"></i>
+                                                                        Edit</a>
+                                                                    <a class="dropdown-item" href="#"><i
+                                                                            class="dw dw-delete-3"></i>
+                                                                        Delete</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="row mt-3">
+                                    <div class="col-sm-12 col-md-5">
+                                        <div class="dataTables_info" id="DataTables_Table_0_info" role="status"
+                                            aria-live="polite">1-10 of 12 entries</div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-7">
+                                        <div class="dataTables_paginate paging_simple_numbers"
+                                            id="DataTables_Table_0_paginate">
+                                            <ul class="pagination">
+                                                <li class="paginate_button page-item previous disabled"
+                                                    id="DataTables_Table_0_previous"><a href="#"
+                                                        aria-controls="DataTables_Table_0" data-dt-idx="0" tabindex="0"
+                                                        class="page-link"><i class="ion-chevron-right"></i></a></li>
+                                                <li class="paginate_button page-item active"><a href="#"
+                                                        aria-controls="DataTables_Table_0" data-dt-idx="1" tabindex="0"
+                                                        class="page-link">1</a></li>
+                                                <li class="paginate_button page-item "><a href="#"
+                                                        aria-controls="DataTables_Table_0" data-dt-idx="2" tabindex="0"
+                                                        class="page-link">2</a></li>
+                                                <li class="paginate_button page-item next" id="DataTables_Table_0_next">
+                                                    <a href="#" aria-controls="DataTables_Table_0" data-dt-idx="3"
+                                                        tabindex="0" class="page-link"><i
+                                                            class="ion-chevron-left"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-wrap pd-20 mb-20 card-box">
+        Matjary | Powered by <a href="https:advancedelaf.com" target="_blank">Advanced Elaf</a>
+    </div>
+    </div>
+    </div>
+    <!-- js -->
+    <script src="vendors/scripts/core.js"></script>
+    <script src="vendors/scripts/script.min.js"></script>
+    <script src="vendors/scripts/process.js"></script>
+    <script src="vendors/scripts/layout-settings.js"></script>
+    <script src="src/plugins/apexcharts/apexcharts.min.js"></script>
+    <script src="src/plugins/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="src/plugins/datatables/js/dataTables.bootstrap4.min.js"></script>
+    <script src="src/plugins/datatables/js/dataTables.responsive.min.js"></script>
+    <script src="src/plugins/datatables/js/responsive.bootstrap4.min.js"></script>
+    <script src="vendors/scripts/dashboard.js"></script>
+</body>
+
+</html>
