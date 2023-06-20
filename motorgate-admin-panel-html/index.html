@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--META TAGS  -->
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Parastone">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CANONICAL -->
+    <link rel="canonical" href="https://yourdoaminname.com/" />
+
+    <!-- TITLE -->
+    <title>Super Admin Dashboard | MotoGate</title>
+
+    <!-- BOOTSTRAP -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/super-admin-styles.css">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+
+    <!-- ICOFONTS -->
+    <link rel="stylesheet" href="assets/icofont/icofont.min.css">
+
+    <!-- BOX ICONS -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/super-admin-main.js"></script>
+</head>
+
+<body>
+    <div class="sidebar open">
+        <div class="logo-details">
+            <i class='bx bxl-c-plus-plus icon'></i>
+            <div class="logo_name">MotorGate</div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav-list">
+            <li>
+                <i class='bx bx-search'></i>
+                <input type="text" placeholder="Search...">
+                <span class="tooltip">Search</span>
+            </li>
+            <li>
+                <a href="#dashboard-panel">
+                    <i class='bx bxs-category'></i>
+                    <span class="links_name">Dashboard</span>
+                </a>
+                <span class="tooltip">Dashboard</span>
+            </li>
+            <li>
+                <a href="#vehicle-company-panel">
+                    <i class='bx bxs-car'></i>
+                    <span class="links_name">Vehicle Company</span>
+                </a>
+                <span class="tooltip">Vehicle Company</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-car-garage'></i>
+                    <span class="links_name">Service Centers</span>
+                </a>
+                <span class="tooltip">Service Centers</span>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="icofont-filter"></i>
+                    <span class="links_name">Filters</span>
+                </a>
+                <span class="tooltip">Filters</span>
+
+                <ul class="sub-menu">
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-group'></i>
+                    <span class="links_name">Partners</span>
+                </a>
+                <span class="tooltip">Partners</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-bell'></i>
+                    <span class="links_name">Notifications</span>
+                </a>
+                <span class="tooltip">Notifications</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="icofont-volume-bar"></i>
+                    <span class="links_name">Promotions</span>
+                </a>
+                <span class="tooltip">Promotions</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-receipt'></i>
+                    <span class="links_name">Subscription Plans</span>
+                </a>
+                <span class="tooltip">Subscription Plans</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="icofont-user-male"></i>
+                    <span class="links_name">Admins</span>
+                </a>
+                <span class="tooltip">Admins</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="icofont-users-alt-1"></i>
+                    <span class="links_name">Employees</span>
+                </a>
+                <span class="tooltip">Employees</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-user'></i>
+                    <span class="links_name">Users</span>
+                </a>
+                <span class="tooltip">Users</span>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class='bx bxs-comment-detail'></i>
+                    <span class="links_name">User Reviews</span>
+                </a>
+                <span class="tooltip">User Reviews</span>
+            </li>
+            <li class="profile">
+                <div class="profile-details">
+                    <img src="assets/image/arbi.jpg" alt="profileImg">
+                    <div class="name_job">
+                        <div class="name">Sultan Ahmed Siddiqui</div>
+                        <div class="job">Admin, MotorGate</div>
+                    </div>
+                </div>
+                <a href="#"><i class='bx bx-log-out' id="log_out"></i></a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- DASHBOARD SECTION STARTS -->
+    <section id="dashboard-panel" class="dashboard-section">
+        <div class="container">
+            <div class="text">Dashboard</div>
+            <div class="current-date-time">24/09/2021</div>
+        </div>
+
+
+        <div class="overview">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                        <div class="overview-card">
+                            <h4>Total Number of Users</h4>
+                            <h3>120</h3>
+                            <button class="overview-btn">More Details</button>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                        <div class="overview-card">
+                            <h4>Listed Service Centers</h4>
+                            <h3>200</h3>
+                            <button class="overview-btn">More Details</button>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                        <div class="overview-card">
+                            <h4>Total Delegates</h4>
+                            <h3>25</h3>
+                            <button class="overview-btn">More Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- DASHBOARD SECTION ENDS -->
+
+    <!-- VEHICLE COMPANY SECTION STARTS -->
+    <section id="vehicle-company-panel" class="vehicle-company-section">
+        <div class="container">
+            <div class="text">Vehicle Company</div>
+            <div class="current-date-time">24/09/2021</div>
+
+            <div class="row">
+                <div class="col-6">
+                    <div class="section-subtitle">Listed Vehicle Companies</div>
+                </div>
+
+                <div class=" col-6 d-grid gap-2 d-md-flex justify-content-md-end"">
+                    <button class=" btn add-btn" type="button">Add Company</button>
+                    <!-- <button class="btn edit-btn" type="button">Edit Company</button>
+                    <button class="btn remove-btn" type="button">Remove Company</button> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="overview">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 col-xl-3">
+                        <div class="brand-card">
+                            <img src="assets/image/bmw-logo.png">
+                            <h5>BMW</h5>
+                            <div class="d-grid gap-2 col-12 mx-auto">
+                                <button class="btn edit-btn btn-block" type="button">Edit Company</button>
+                                <button class="btn remove-btn btn-block" type="button">Remove Company</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 col-xl-3">
+                        <div class="brand-card">
+                            <img src="assets/image/Mercedes-Benz-Logo.png">
+                            <h5>Mercedes-Benz</h5>
+                            <div class="d-grid gap-2 col-12 mx-auto">
+                                <button class="btn edit-btn btn-block" type="button">Edit Company</button>
+                                <button class="btn remove-btn btn-block" type="button">Remove Company</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 col-xl-3">
+                        <div class="brand-card">
+                            <img src="assets/image/audi-logo.png">
+                            <h5>Audi</h5>
+                            <div class="d-grid gap-2 col-12 mx-auto">
+                                <button class="btn edit-btn btn-block" type="button">Edit Company</button>
+                                <button class="btn remove-btn btn-block" type="button">Remove Company</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 col-xl-3">
+                        <div class="brand-card">
+                            <img src="assets/image/Cadillac-Logo.png">
+                            <h5>Cadillac</h5>
+                            <div class="d-grid gap-2 col-12 mx-auto">
+                                <button class="btn edit-btn btn-block" type="button">Edit Company</button>
+                                <button class="btn remove-btn btn-block" type="button">Remove Company</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- VEHICLE COMPANY SECTION ENDS -->
+
+    <!-- PARTNER ADMIN SECTION STARTS -->
+    <section id="add-branch-panel" class="add-branch-section">
+        <div class="container">
+            <div class="text">Add Partner New Service Center/Garage</div>
+            <div class="current-date-time">24/09/2021</div>
+        </div>
+
+        <div class="overview">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-card">
+                            <div class="form-card-title">
+                                <h4><i class="icofont-page"></i>Basic Details</h4>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label"><i class="icofont-image"></i> Featured Image</label>
+                                <input type="file" name="featured_img" class="form-control-file">
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label"><i class="bx bxs-car-garage"></i> Service Center Name</label>
+                                <input type="text" class="form-control" placeholder="Enter Service Center Name">
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="mb-3">
+                                        <select class="form-control" aria-label="Default select example">
+                                            <option selected>Vehicle Type</option>
+                                            <option value="1">Large Car</option>
+                                            <option value="2">Small Car</option>
+                                            <option value="3">Motorcycle</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="mb-3">
+                                        <select class="form-control" aria-label="Default select example">
+                                            <option selected>Service Center Category</option>
+                                            <option value="1">Large Car</option>
+                                            <option value="2">Small Car</option>
+                                            <option value="3">Motorcycle</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="mb-3">
+                                <select class="form-control" aria-label="Default select example">
+                                    <option selected>Service Center Speialization</option>
+                                    <option value="1">Large Car</option>
+                                    <option value="2">Small Car</option>
+                                    <option value="3">Motorcycle</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Supported Companies & Models
+                                    </button>
+                                    <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Select 1
+                                                    </label>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                        <ul class="sub-dropdown">
+                                            <li><a class="dropdown-item">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="flexCheckDefault">
+                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                            Select 1.1
+                                                        </label>
+                                                    </div>
+                                                </a></li>
+                                        </ul>
+
+                                        <li><a class="dropdown-item" href="#">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Select 2
+                                                    </label>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                        <li><a class="dropdown-item" href="#">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Select 3
+                                                    </label>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                        <li><a class="dropdown-item" href="#">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Select 4
+                                                    </label>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">Main Branch</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">Sub Branch</label>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <select class="form-control" aria-label="Default select example">
+                                    <option selected>Choose Main Branch</option>
+                                    <option value="1">Large Car</option>
+                                    <option value="2">Small Car</option>
+                                    <option value="3">Motorcycle</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <select class="form-control" aria-label="Default select example">
+                                    <option selected>Supported Companies</option>
+                                    <option value="1">Large Car</option>
+                                    <option value="2">Small Car</option>
+                                    <option value="3">Motorcycle</option>
+                                </select>
+                            </div>
+
+
+
+                            <div class="mb-3">
+                                <select class="form-control" aria-label="Default select example">
+                                    <option selected>Supported Make Year</option>
+                                    <option value="1">Large Car</option>
+                                    <option value="2">Small Car</option>
+                                    <option value="3">Motorcycle</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <select class="form-control" aria-label="Default select example">
+                                    <option selected>Supported Company Models</option>
+                                    <option value="1">Large Car</option>
+                                    <option value="2">Small Car</option>
+                                    <option value="3">Motorcycle</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Make Year</label>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div id="slider-range"></div>
+                                    </div>
+                                </div>
+                                <div class="row slider-labels">
+                                    <div class="col-sm-6 caption">
+                                        <strong>Min:</strong> <span id="slider-range-value1"></span>
+                                    </div>
+                                    <div class="col-sm-6 text-end caption">
+                                        <strong>Max:</strong> <span id="slider-range-value2"></span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <form>
+                                            <input type="hidden" name="min-value" value="">
+                                            <input type="hidden" name="max-value" value="">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- <div class="mb-3">
+                                <label class="form-label">Status</label>
+                                <div class="form-check form-switch d-flex">
+                                    <label>Inactive</label>
+                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                    <label>Active</label>
+                                </div>
+                            </div> -->
+
+                            <div class="mb-3">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <label class="form-label">Status</label>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                            <label class="custom-control-label" for="customSwitch1"></label>
+                                          </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-card">
+                            <div class="form-card-title">
+                                <h4><i class="icofont-contacts"></i>Contact Details</h4>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label"><i class="icofont-envelope"></i>Email Address</label>
+                                <input type="email" class="form-control" placeholder="Enter Email Address">
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label"><i class="icofont-phone"></i>Contact Number</label>
+                                <div class="row">
+                                    
+                                    <div class="col-4">
+                                        <select class="form-control" aria-label="Default select example">
+                                            <option value="1">(+966) Saudi Arabia</option>
+                                            <option value="2">(+91) India</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-8">
+                                        <input type="tel" class="form-control" placeholder="Enter Contact Number">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label"><i class="icofont-phone"></i>Alternate Contact
+                                    Number</label>
+                                <div class="row">
+                                    
+                                    <div class="col-4">
+                                        <select class="form-control" aria-label="Default select example">
+                                            <option value="1">(+966) Saudi Arabia</option>
+                                            <option value="2">(+91) India</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-8">
+                                        <input type="tel" class="form-control" placeholder="Enter Contact Number">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label"><i class="icofont-whatsapp"></i>WhatsApp Number</label>
+                                <input type="tel" class="form-control" placeholder="Enter Alternate Contact Number">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="form-card">
+                            <div class="form-card-title">
+                                <h4><i class="icofont-map-pins"></i>Address Details</h4>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="mb-3">
+                                        <select class="form-control" aria-label="Default select example">
+                                            <option selected>City</option>
+                                            <option value="1">Riyadh</option>
+                                            <option value="2">Dammam</option>
+                                            <option value="3">Jeddah</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="mb-3">
+                                        <select class="form-control" aria-label="Default select example">
+                                            <option selected>Neighbourhood</option>
+                                            <option value="1">Riyadh</option>
+                                            <option value="2">Dammam</option>
+                                            <option value="3">Jeddah</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label"><i class="icofont-mail-box"></i>Zip Code</label>
+                                <input type="text" class="form-control" placeholder="Enter Zip Code" aria-label="zip">
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label"><i class="icofont-location-pin"></i>Address</label>
+                                <textarea name="address" class="form-control" placeholder="Enter Address"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-card">
+                            <div class="form-card-title">
+                                <h4><i class="icofont-link"></i> Web & Social Media Links</h4>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label"><i class="icofont-web"></i>Website Link</label>
+                                <input type="text" class="form-control" placeholder="Enter Service Center Website Link">
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label"><i class="icofont-instagram"></i>Instagram Link</label>
+                                <input type="text" class="form-control"
+                                    placeholder="Enter Service Center Instagram Link">
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label"><i class="icofont-facebook"></i>Facebook Link</label>
+                                <input type="text" class="form-control"
+                                    placeholder="Enter Service Center Facebook Link">
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label"><i class="icofont-twitter"></i>Twitter Link</label>
+                                <input type="text" class="form-control" placeholder="Enter Service Center Twitter Link">
+                            </div>
+                        </div>
+
+                        <div class="form-card">
+                            <div class="timing-cal-wrapper">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- PARTNER ADMIN SECTION ENDS -->
+    <script>
+        let sidebar = document.querySelector(".sidebar");
+        let closeBtn = document.querySelector("#btn");
+        let searchBtn = document.querySelector(".bx-search");
+
+        closeBtn.addEventListener("click", () => {
+            sidebar.classList.toggle("open");
+            menuBtnChange();//calling the function(optional)
+        });
+
+        searchBtn.addEventListener("click", () => { // Sidebar open when you click on the search iocn
+            sidebar.classList.toggle("open");
+            menuBtnChange(); //calling the function(optional)
+        });
+
+        // following are the code to change sidebar button(optional)
+        function menuBtnChange() {
+            if (sidebar.classList.contains("open")) {
+                closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+            } else {
+                closeBtn.classList.replace("bx-menu-alt-right", "bx-menu");//replacing the iocns class
+            }
+        }
+    </script>
+</body>
+
+</html>
