@@ -1,0 +1,1160 @@
+*{
+    direction: rtl;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Almarai', sans-serif;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.d-grid {
+    display: grid;
+}
+
+.gap-2 {
+    gap: 0.5rem;
+}
+
+li.breadcrumb-item.active {
+    display: flex;
+}
+
+.modal-header .close {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.modal-body label {
+    float: right;
+}
+
+/* LOGIN-SIGNUP MODAL CSS STARTS */
+
+#signUpModal {
+    overflow-y: auto !important;
+}
+
+a.signup-link {
+    padding: 0.5rem !important;
+    color: #24A9E2 !important;
+}
+
+a.signup-link.active {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+}
+
+a.signup-link:hover {
+    background-color: #24A9E2 !important;
+    color: #ffffff !important;
+}
+
+.login-signup-btn {
+    background-color: #000000;
+    border: #000000;
+    width: 100%;
+    padding: 0.8rem 7rem;
+}
+
+.login-signup-btn:hover {
+    background-color: #24A9E2;
+}
+
+.modal-link, .login-option {
+    margin: 0.5rem 0;
+}
+
+/* .social-login ul {
+    padding-right: 0;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    text-align: right;
+}
+
+.social-login ul li {
+    color: #ffffff !important;
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin: 0.15rem;
+    width: 100%;
+}
+
+.social-login ul li i {
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+    color: #ffffff;
+    transition: 0.5s ease;
+}
+
+li.signin-google {
+    background-color: #E2514D;
+    transition: 0.3s ease;
+    border: 1px solid #E2514D;
+}
+
+li.signin-google:hover {
+    background-color: transparent !important;
+}
+
+li.signin-google:hover a {
+    color: #E2514D;
+}
+
+li.signin-google:hover i {
+    color: #E2514D;
+}
+
+li.signin-facebook {
+    background-color: #4267B2;
+    transition: 0.3s ease;
+    border: 1px solid #4267B2;
+}
+
+li.signin-facebook:hover {
+    background-color: transparent !important;
+}
+
+li.signin-facebook:hover a {
+    color: #4267B2;
+}
+
+li.signin-facebook:hover i {
+    color: #4267B2;
+}
+
+li.signin-apple {
+    background-color: #000000;
+    transition: 0.3s ease;
+    border: 1px solid #000000;
+}
+
+li.signin-apple:hover {
+    background-color: transparent !important;
+}
+
+li.signin-apple:hover a {
+    color: #000000;
+}
+
+li.signin-apple:hover i {
+    color: #000000;
+}
+
+li.signin-twitter {
+    background-color: #1DA1F2;
+    transition: 0.3s ease;
+    border: 1px solid #1DA1F2;
+}
+
+li.signin-twitter:hover {
+    background-color: transparent !important;
+}
+
+li.signin-twitter:hover a {
+    color: #1DA1F2;
+}
+
+li.signin-twitter:hover i {
+    color: #1DA1F2;
+}
+
+.social-login a {
+    color: #ffffff;
+} */
+
+.social-login ul {
+    padding-right: 0;
+    align-items: center;
+    margin-top: -0.5rem;
+}
+
+.social-login ul li i:hover {
+    background-color: #24A9E2;
+    color: #ffffff !important;
+    border-radius: 1rem;
+}
+
+.social-login ul li i {
+    margin: 5px;
+    padding: 1rem 1.5rem;
+    font-size: 1.5rem;
+    color: #000000;
+    transition: 0.5s ease;
+}
+
+.signin-button svg:hover path {
+    fill: #fff !important;
+}
+
+.signin-button svg {
+    transition: 0.5s ease;
+}
+
+.signin-button svg:hover {
+    background-color: #24A9E2;
+    border-radius: 1rem;
+}
+
+.modal-footer {
+    display: block !important;
+}
+
+.modal-footer p {
+    margin: 10px;
+}
+
+.modal-footer button {
+    background-color: #000000;
+    border-color: #000000;
+}
+/* HEADER CSS STARTS */
+
+.nav-link {
+    padding:0.5rem 0 !important;
+}
+
+.navbar-brand img {
+    width: 180px;
+    height: auto;
+    padding: 5px;
+    border-radius: 10px;
+}
+.navbar-light .navbar-nav .nav-link {
+    margin: 1rem 0.5rem;
+    color: #ffffff;
+}
+
+.nav-right-link {
+    color: #ffffff;
+    margin: 1rem 0.5rem;
+}
+
+.nav-right-link:hover {
+    color: #000000;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.nav-fav-icon {
+    margin: 1.5rem 0;
+}
+
+.nav-fav-icon i {
+    color: #FFCE31;
+    font-size: 1.3rem;
+}
+
+ul.dropdown-menu.show {
+    margin-left: -5rem !important;
+}
+
+.fixed-top {
+    background-color: #24A9E2;
+    box-shadow: 0 0 60px 0 rgb(0 0 0 / 7%);
+    -webkit-box-shadow: 0 10px 15px rgb(25 25 25 / 10%);
+    transition: 0.5s ease;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: transparent;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    background-color: transparent;
+    border: none;
+}
+
+/* HOME PAGE: HERO CSS STARTS */
+
+/* .parallax {
+    background-image: url("../image/banner-image-2.jpeg");
+    min-height: 100vh; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+} */
+
+.parallax-min {
+    background-image: url("../image/banner-image-2.jpeg");
+    min-height: 60vh; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.filter-section {
+    background-image: url("../image/banner-image-2.jpeg");
+    min-height: 60vh;
+    padding: 2rem;
+    background-repeat: no-repeat;
+}
+
+.home-carousel img {
+    height: 80vh;
+    object-fit: cover;
+}
+
+.carousel-content {
+    position: absolute;
+    top: 12rem;
+    right: 7rem;
+    color: #ffffff;
+    text-align: right;
+}
+
+.carousel-content h3 {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.carousel-content p {
+    font-weight: 500;
+    text-shadow: 2px 2px 4px #000000;
+    width: 70%;
+    text-align: right;
+}
+
+.home-banner-title h2 {
+    color: #ffffff;
+    font-weight: 700;
+    text-align: right;
+}
+
+.banner-form {
+    margin: 5px;
+}
+
+.main-search {
+    padding: 1.5rem;
+    background-color: #FBFAFF;
+}
+
+/* HOME PAGE: HERO CSS ENDS */
+
+/* HOME PAGE: SECTION TWO CSS STARTS */
+
+.section-spacing {
+    padding: 50px 0 50px;
+}
+
+.section-title {
+    color: #000000;
+    text-align: right;
+}
+
+.section-title-row {
+    padding: 1.5rem 0;
+    align-items: center;
+}
+
+.section-title h3{
+    font-weight: 700;
+}
+
+.view-btn a{
+    background-color: #24A9E2;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.view-btn a:hover {
+    background-color: #000000;
+}
+
+.garage-list-wrapper {
+    margin: 1.5rem 0.8rem;
+    transition: 0.5s ease;
+}
+
+.garage-list-wrapper:hover {
+    transform: scale(1.1);
+}
+
+.shortlist {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+.shortlist i {
+    cursor:pointer;
+    padding:10px 12px 8px;
+    background:#fff;
+    border-radius:50%;
+    margin:0 0 15px;
+    color:#aaa;
+    transition:.2s;
+  }
+  
+  .shortlist i:hover {
+    color:#666;
+  }
+  
+  .shortlist span {
+    position: absolute;
+    bottom:70px;
+    left:0;
+    right:0;
+    visibility: hidden;
+    transition:.6s;
+    z-index:-2;
+    font-size:2px;
+    color:transparent;
+    font-weight:400;
+  }
+  
+  .shortlist i.press {
+    animation: size .4s;
+    color: #ff0000;
+  }
+  
+  .shortlist span.press {
+    bottom:120px;
+    font-size:14px;
+    visibility:visible;
+    animation: fade 1s;
+  }
+  
+  @keyframes fade {
+    0% {color:#transparent;}
+    50% {color:#e23b3b;}
+    100% {color:#transparent;}
+  }
+  
+  @keyframes size {
+    0% {padding:10px 12px 8px;}
+    50% {padding:14px 16px 12px;  
+      margin-top:-4px;}
+    100% {padding:10px 12px 8px;}
+  }
+
+  .shortlist img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    position: absolute;
+    top: 3.5rem;
+    right: 0.3rem;
+}
+
+.garage-card img {
+    height: 150px !important;
+    object-fit: cover;
+    width: -webkit-fill-available;
+}
+
+.garage-details {
+    padding: 1rem 0.5rem;
+    box-shadow: 3px 4px 15px #44464778;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: relative;
+    background-color: #ffffff;
+    text-align: right;
+}
+
+.garage-details-title {
+    display: flex;
+    margin-bottom: 0.5rem;
+}
+
+.garage-details-title i {
+    color: #24A9E2;
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+    margin-top: 0.2rem;
+}
+
+.garage-details-title h4 {
+    color: #24A9E2;
+    font-weight: 600;
+}
+
+.garage-details h5 a{
+    font-weight: 600;
+    color: #000000;
+    text-align: right;
+}
+
+.garage-details h6 {
+    color: #ababab;
+    font-weight: 600;
+    font-size: 0.9rem
+}
+
+.garage-rating-icon, .garage-rating-count {
+    color: #FFCE31;
+}
+
+.garage-rating-count {
+    margin: 1px;
+}
+
+.check-btn {
+    background-color: #000000;
+    color: #ffffff;
+    border-color: #000000;
+}
+
+/* HOME PAGE: SECTION TWO CSS ENDS */
+
+/* HOME PAGE: SECTION THREE CSS STARTS */
+.section-bg-dark {
+    background-color: #FBFAFF;
+}
+
+.specialization-card {
+    padding: 1rem 0.5rem;
+    box-shadow: 3px 4px 15px #44464778;
+    border-radius: 5px;
+    margin: 1rem;
+    transition: 0.5s ease;
+    background-color: #ffffff;
+}
+
+.specialization-card:hover {
+    transform: scale(1.1);
+}
+
+.specialization-card img {
+    /* width: 100%; */
+    height: 80px;
+    object-fit: contain;
+    border-radius: 5px !important;
+}
+
+.specialization-card h5 {
+    font-weight: 600;
+    text-align: center;
+    margin-top: 1rem;
+    color: #000000;
+}
+/* HOME PAGE: SECTION THREE CSS ENDS */
+
+/* HOME PAGE: SECTION FOUR CSS STARTS */
+.brand-card {
+    padding: 1rem 0.5rem;
+    box-shadow: 3px 4px 15px #44464778;
+    border-radius: 5px;
+    margin: 1rem;
+    transition: 0.5s ease;
+    background-color: #ffffff;
+}
+
+.brand-card:hover {
+    transform: scale(1.1);
+}
+
+.brand-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 5px !important;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.brand-card h5 {
+    font-weight: 600;
+    text-align: center;
+    color: #000000;
+    font-size: 1.5rem;
+}
+/* HOME PAGE: SECTION FOUR CSS ENDS */
+
+/* HOME PAGE: SECTION FIVE CSS STARTS */
+.testimonials-card {
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.testimonials-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.testimonials-card h5 {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.testimonials-card p{
+    color: #4A5764;
+    text-align: center;
+}
+
+button.owl-prev, button.owl-next {
+    margin: 2rem !important;
+    background: #000000 !important;
+    transition: 0.5s ease;
+}
+
+button.owl-prev:hover, button.owl-next:hover {
+    background: #24A9E2 !important;
+}
+
+.owl-nav span {
+    padding: 0 2rem;
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+.owl-dots {
+    display: none;
+}
+/* HOME PAGE: SECTION FIVE CSS ENDS */
+
+/* POPULAR GARAGE PAGE CSS STARTS */
+
+.listed-filter {
+    margin: 8px;
+}
+
+.form-spacing {
+    margin: 5px;
+}
+
+.listed-garages {
+    margin: 1.5rem 0;
+}
+
+.garage-wrapper {
+    margin-bottom: 1.5rem;
+    transition: 0.5s ease;
+}
+
+.garage-wrapper:hover {
+    transform: scale(1.05);
+}
+
+/* POPULAR GARAGE PAGE CSS ENDS*/
+
+/* SPECIALIZED SERVICE GARAGE PAGE CSS STARTS */
+
+.major-filter-btn {
+        margin: 0 0 0 10px;
+}
+
+.major-filter-btn button {
+    background-color: #24A9E2;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border-color: #24A9E2;
+}
+
+.major-filter-btn button:hover {
+    background-color: #000000;
+    border-color: #000000;
+}
+
+.major-filter-btn a{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+   
+    border-radius: 5px;
+}
+
+.major-filter-btn a:hover {
+    background-color: #24A9E2;
+}
+
+.major-filter-btn a {
+    color: #ffffff;
+    background-color: #000000;
+    padding: 0.5rem 1rem;
+    float: right;
+    border-radius: 5px;
+}
+/* SPECIALIZED SERVICE GARAGE PAGE CSS ENDS */
+
+/* CAR BRAND SERVICE GARAGE PAGE CSS STARTS */
+
+.car-brand-logo img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.brand-name h3 {
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+}
+/* CAR BRAND SERVIE GARAGE PAGE CSS ENDS */
+
+/* VEHICLE BRANDS PAGE CSS STARTS */
+
+.vehicle-search-btn {
+    background-color: #24A9E2;
+    border: none;
+    color: #ffffff;
+    padding: 0.8rem 2.5rem;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transition: 0.5s ease;
+}
+
+.car-search {
+    box-shadow: 3px 4px 15px #44464778;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+/* CONTACT PAGE CSS STARTS */
+
+.contact-form {
+    padding: 1rem;
+}
+
+.brand-black-btn {
+    background-color: #000000;
+    border-color: #000000;
+}
+
+.brand-black-btn:hover {
+    background-color: #24A9E2;
+    border: #24A9E2;
+}
+
+.contact-card {
+    padding: 1rem;
+    border: 1px solid #000000;
+    transition: 0.5s ease;
+    color: #000000;
+    /* height: 200px; */
+}
+
+.contact-card i {
+    font-size: 3rem;
+    color: #24A9E2;
+}
+
+.contact-card:hover {
+    background-color: #24A9E2;
+    color: #ffffff;
+}
+
+.contact-card:hover i {
+    color: #ffffff;
+}
+
+.business-hour-wrapper {
+    margin-bottom: 0.5rem;
+}
+
+.business-hour-wrapper i {
+    color: #24A9E2;
+    font-size: 1.8rem;
+    margin-left: 0.5rem;
+}
+
+.business-hour-wrapper p {
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+.contact-social-media {
+    padding-right: 0!important;
+    float: right;
+}
+
+.contact-social-media li {
+    display: inline-flex;
+    border: 1px solid #24A9E2;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    transition: 0.5s ease;
+}
+
+.contact-social-media i {
+    color: #24A9E2;
+    font-size: 27px;
+}
+
+.cont-info-btm-spacing {
+    margin-bottom: 5.8rem;
+}
+
+/* CONTACT PAGE CSS ENDS */
+
+/* PROFILE PAGE CSS STARTS */
+
+.profile-card {
+    box-shadow: 3px 4px 15px #44464778;
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+/* PROFILE PAGE CSS ENDS */
+
+/* BREADCRUMB CSS STARTS */
+
+.breadcrumb {
+    margin-top: 0.5rem;
+    background: none !important;
+}
+
+li.breadcrumb-item a{
+    color: #ffffff;
+}
+
+li.breadcrumb-item.active {
+    color: #000000 !important;
+}
+
+/* BREADCRUMB CSS ENDS */
+
+.other-banner-title {
+    margin-top: 10rem;
+}
+
+.other-banner-title h2 {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+/* GARAGE DETAILS CSS STARTS */
+
+.parallax-min-garage {
+    background-image: url("../image/garage-image.jpg");
+    min-height: 70vh; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    z-index: -1;
+}
+
+
+.garage-title h3{
+    position: absolute;
+    bottom: 70px;
+    color: #ffffff;
+    font-weight: 700;
+    text-shadow: -1px -1px 2px rgba(150, 150, 150, 1);
+}
+
+.garage-title h5 {
+    position: absolute;
+    bottom: 40px;
+    font-weight: 700;
+    color: #efefef;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+section.garage-desc-section p {
+    text-align: right;
+}
+
+.overview-card {
+    padding: 1rem 2rem;
+    background-color: #ffffff;
+    box-shadow: 3px 4px 15px #44464778;
+    border-radius: 10px;
+}
+
+.offer-wrapper {
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 3px 4px 15px #44464778;
+    background-color: #ffffff;
+}
+
+.offer-wrapper img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+.offer-modal-body img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.offer-modal-content {
+    margin-top: 0.5rem;
+    text-align: right;
+}
+
+.offer-modal-content small {
+    color: #24A9E2;
+}
+
+.overview-card i {
+    color: #FFCE31;
+    font-size: 2.5rem;
+}
+
+.achievement-card {
+    margin-top: -2rem;
+}
+
+.garage-contact-card {
+    background-color: #ffffff;
+    padding: 1rem;
+    box-shadow: 3px 4px 15px #44464778;
+    border-radius: 10px;
+    color: #000000;
+    margin-bottom: 1rem;
+    height: 160px;
+}
+
+.garage-contact-card:hover {
+    background-color: #24A9E2;
+    color: #ffffff;
+}
+
+.garage-contact-card i {
+    font-size: 2rem;
+}
+
+.garage-contact-card h5 {
+    margin-top: 1rem;
+}
+
+.garage-contact-card h6 {
+    word-break: break-all;
+}
+
+.opening-hours-card {
+    box-shadow: 3px 4px 15px #44464778;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.opening-hours-card i {
+    font-size: 1.5rem;
+}
+
+span.day {
+    width: 4rem;
+}
+
+span.timing {
+    margin-left: auto;
+}
+
+.review-title h4 {
+    margin-bottom: 2rem;
+}
+
+.review-block {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.review-block img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.review-detail {
+    display: block;
+    margin-right: 0.5rem;
+    text-align: right;
+}
+
+.review-detail h6 {
+    margin-bottom: 0;
+}
+
+.review-rating {
+    display: flex;
+}
+
+p.main-review {
+    color: #4A5764;
+    font-size: 14px;
+    margin-top: 0.6rem;
+}
+
+.write-comment-btn {
+    background-color: #000000;
+    border-color: #000000;
+}
+
+.required-asterisk {
+    color: red;
+}
+
+.garage-branch-card {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 1rem;
+    box-shadow: 3px 4px 15px #44464778;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.garage-branch-card h6 {
+    margin-bottom: 0;
+}
+
+
+/* FOOTER CSS STARTS */
+
+footer {
+    padding: 50px 0 0;
+    background-color: #000000;
+    color: #ffffff;
+    margin-top: 2rem;
+}
+
+.footer-title h4 {
+    font-size: 1.4rem;
+    text-align: right;
+}
+
+.footer-image img {
+    width: 180px;
+    height: auto;
+    background-color: #ffffff;
+    padding: 5px;
+    border-radius: 10px;
+    margin-left: auto;
+    display: block;
+}
+
+.footer-subtitle h5{
+    margin-top: 1rem;
+    font-size: 1rem;
+    text-align: right;
+}
+
+.footer-social {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.footer-social i {
+    margin-left: 10px;
+    color: #ffffff;
+    font-size: 1.4rem;
+}
+
+img.footer-brand {
+    height: 22px;
+}
+
+
+ul.footer-list {
+    margin-top: 1.5rem;
+    padding-right: 0 !important;
+    text-align: right;
+}
+
+ul.footer-list li {
+    margin-bottom: 5px;
+}
+
+ul.footer-list li a {
+    color: #ffffff;
+}
+
+ul.footer-list li a:hover {
+    color: #24A9E2 !important;
+}
+
+.copyright {
+    text-align: right;
+}
+
+.copyright p {
+    border-bottom: 1px solid #f5f5f5;
+    padding-bottom: 1rem;
+}
+
+.credit p {
+    margin-top: 1rem;
+    text-align: right;
+}
+
+.credit a{
+    color: #24A9E2;
+}
+
+.app-image img {
+    width: 120px;
+}
+
+div.scroll {
+    margin:4px, 4px;
+    padding:4px;
+    height: 550px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align:justify;
+}
+
+/* ERROR PAGE CSS STARTS */
+
+.error-detail {
+    text-align: center;
+    place-content: center;
+    display: grid;
+    padding: 4rem;
+}
+
+.error-detail h2 {
+    color: #000000;
+    font-size: 10rem;
+}
+
+.error-detail span {
+    color: #24A9E2;
+}
+
+.error-detail p {
+    text-transform: uppercase;
+    font-size: 1.25rem;
+}
+
+.error-btn a {
+    background-color: #24A9E2;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.error-btn a:hover {
+    background-color: #000000;
+}
+
+/* ERROR PAGE CSS ENDS */

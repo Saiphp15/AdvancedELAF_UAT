@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--META TAGS  -->
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="MotorGate">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CANONICAL -->
+    <link rel="canonical" href="https://motorgate.com/" />
+
+    <!-- TITLE -->
+    <title>MotorGate</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- BOOTSTRAP -->
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/styles-ar.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <!-- <link rel="stylesheet" href="assets/css/animate.css"> -->
+
+    <!-- ICOFONTS -->
+    <link rel="stylesheet" href="assets/icofont/icofont.min.css">
+
+    <!-- FONTAWESOME LINK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- OWL CAROUSEL CSS -->
+    <link rel="stylesheet" href="assets/owl-carousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/owl-carousel/dist/assets/owl.theme.default.min.css">
+
+    <!-- SCRIPTS -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script> -->
+    <script src="assets/js/main.js"></script>
+    <!-- <script src="assets/js/wow.min.js"></script> -->
+    <script src="assets/owl-carousel/dist/owl.carousel.min.js"></script>
+</head>
+
+<body>
+    <!-- HEADER STARTS -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/image/motorgate-logo.png">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact-us.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex">
+                        <a class="nav-link nav-right-link" href="#"><i class="icofont-location-pin"></i> Location</a>
+                        <a class="nav-link nav-right-link" data-toggle="modal" data-target="#loginModal"
+                            role="button"><i class="icofont-login"></i> Login</a>
+                        <a class="nav-link nav-right-link">|</a>
+                        <a class="nav-link nav-right-link" data-toggle="modal" data-target="#signUpModal"
+                            role="button"><i class="icofont-ui-user"></i> Signup</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- HEADER ENDS -->
+
+    <!-- LOGIN MODAL STARTS -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label>Email address</label>
+                        <input type="email" class="form-control" placeholder="Enter Your Email Address">
+                    </div>
+
+                    <div class="mb-3">
+                        <label>Password</label>
+                        <input type="password" class="form-control" placeholder="Enter your Password">
+                    </div>
+
+                    <div class="mx-auto align-self-center">
+                        <button class="btn btn-primary login-signup-btn" type="button">Login</button>
+                    </div>
+
+                    <div class="modal-link text-center">
+                        <a href="#" data-toggle="modal" data-target="#forgotPasswordModal" data-bs-toggle="modal"
+                            data-dismiss="modal">Forgot Password?</a>
+                    </div>
+
+                    <div class="login-option text-center">
+                        <span>OR</span>
+                    </div>
+
+                    <div class="social-login">
+                        <ul class="d-flex justify-content-center">
+                            <li><a href="#"><i class="icofont-google-plus"></i></a></li>
+                            <li><a href="#"><i class="icofont-facebook"></i></a></li>
+                            <li><a href="#"><i class="icofont-brand-apple"></i></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <div class="d-flex justify-content-center">
+                        <p>Don't have an account?</p>
+                        <button class="btn btn-primary" data-target="#signUpModal" data-toggle="modal"
+                            data-dismiss="modal">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- LOGIN MODAL ENDS -->
+
+    <!-- SIGNUP MODAL STARTS -->
+    <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+        aria-hidden="true" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Signup</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <ul class="nav nav-tabs mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active signup-link" id="pills-user-tab" data-toggle="pill"
+                                href="#pills-user" role="tab" aria-controls="pills-user" aria-selected="true">User
+                                Signup</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link signup-link" id="pills-partner-tab" data-toggle="pill"
+                                href="#pills-partner" role="tab" aria-controls="pills-partner"
+                                aria-selected="false">Partner Signup</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-user" role="tabpanel"
+                            aria-labelledby="pills-user-tab">
+
+                            <div class="mb-3">
+                                <label>Name</label>
+                                <input type="text" class="form-control" placeholder="Enter your full name">
+                            </div>
+
+                            <div class="mb-3">
+                                <label>Email</label>
+                                <input type="email" class="form-control" placeholder="Enter your email address">
+                            </div>
+
+                            <div class="mb-3">
+                                <label>Contact Number</label>
+                                <input type="tel" class="form-control" placeholder="Enter your contact name">
+                            </div>
+
+                            <div class="mb-3">
+                                <label>Password</label>
+                                <input type="password" class="form-control" placeholder="Enter your password">
+                            </div>
+
+                            <div class="mb-3">
+                                <label>Confirm Password</label>
+                                <input type="password" class="form-control" placeholder="Confirm your password">
+                            </div>
+
+                            <div class="mx-auto align-self-center">
+                                <button class="btn btn-primary login-signup-btn" type="button">Signup</button>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-partner" role="tabpanel"
+                            aria-labelledby="pills-partner-tab">
+                            <div class="mb-3">
+                                <label>Company Name</label>
+                                <input type="text" class="form-control" placeholder="Enter company name">
+                            </div>
+
+                            <div class="mb-3">
+                                <label>Email address</label>
+                                <input type="email" class="form-control" placeholder="Enter email address">
+                            </div>
+
+                            <div class="mb-3">
+                                <label>Contact Number</label>
+                                <input type="tel" class="form-control" placeholder="Enter your contact number">
+                            </div>
+
+                            <div class="mb-3">
+                                <label>Password</label>
+                                <input type="password" class="form-control" placeholder="Enter your password">
+                            </div>
+
+                            <div class="mb-3">
+                                <label>Confirm Password</label>
+                                <input type="password" class="form-control" placeholder="Confirm your Password">
+                            </div>
+
+                            <div class="mx-auto align-self-center">
+                                <button class="btn btn-primary login-signup-btn" type="button">Signup as
+                                    Partner</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="modal-footer">
+                    <div class="d-flex justify-content-center">
+                        <p>Already have an account?</p>
+                        <button class="btn btn-primary" data-target="#loginModal" data-toggle="modal"
+                            data-dismiss="modal">Login</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SIGNUP MODAL ENDS -->
+
+    <!-- FORGOT PASSWORD MODAL STARTS -->
+    <div class="modal fade" id="forgotPasswordModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+        aria-hidden="true" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Forgot Password?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <p>Please enter your email address, and we will send you a reset password link.</p>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="Enter your Email Address">
+                    </div>
+
+
+                    <div class="d-grid gap-2 justify-content-center">
+                        <button class="btn btn-primary login-signup-btn" type="button">Reset Password</button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="d-flex justify-content-center">
+                        <p>Back to</p>
+                        <button class="btn btn-primary" data-target="#loginModal" data-toggle="modal"
+                            data-dismiss="modal">Login</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FORGOT PASSWORD MODAL ENDS -->
+
+    <!-- PARTNER SIGNUP MODAL STARTS -->
+    <div class="modal fade" id="partnerSignupModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Partner Signup</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label>Company Name</label>
+                        <input type="text" class="form-control" placeholder="Enter company name">
+                    </div>
+
+                    <div class="mb-3">
+                        <label>Email address</label>
+                        <input type="email" class="form-control" placeholder="Enter email address">
+                    </div>
+
+                    <div class="mb-3">
+                        <label>Contact Number</label>
+                        <input type="tel" class="form-control" placeholder="Enter your contact number">
+                    </div>
+
+                    <div class="mb-3">
+                        <label>Password</label>
+                        <input type="password" class="form-control" placeholder="Enter your password">
+                    </div>
+
+                    <div class="mb-3">
+                        <label>Confirm Password</label>
+                        <input type="password" class="form-control" placeholder="Confirm your Password">
+                    </div>
+
+                    <div class="mx-auto align-self-center">
+                        <button class="btn btn-primary login-signup-btn" type="button">Signup as Partner</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- PARTNER SIGNUP MODAL ENDS -->
+
+    <!-- HOME SECTION ONE STARTS-->
+    <div class="parallax-min">
+        <section class="home-section-one">
+            <div class="container">
+                <div class="d-grid">
+                    <div class="other-banner-title text-center">
+                        <h2>Get your car maintained by</h2>
+                        <h2>Popular Garages</h2>
+                    </div>
+                </div>
+
+                <div class="breadcrumb justify-content-center">
+                    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
+                        aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Popular Garage</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- HOME SECTION TWO ENDS -->
+
+    <!-- POPULAR GARAGE LISTING SECTION -->
+
+    <section class="home-section-two section-spacing">
+        <div class="container">
+            <div class="row section-title-row">
+                <div class="section-title">
+                    <h3>All Popular Garages</h3>
+                </div>
+            </div>
+
+            <div class="listed-filters">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-xl-4 col-lg-4">
+                        <select class="form-control form-spacing" aria-label="Default select example">
+                            <option selected>Filter by Speciality</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-xl-4 col-lg-4">
+                        <select class="form-control form-spacing" aria-label="Default select example">
+                            <option selected>Filter by Location</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-xl-4 col-lg-4">
+                        <div class="view-btn">
+                            <a href="#">Apply Filter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="listed-garages">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 col-xl-3">
+                        <div class="garage-wrapper">
+                            <div class="garage-card">
+                                <a href="garage-details.html"><img class="img-fluid"
+                                        src="assets/image/garage-image.jpg"></a>
+                            </div>
+                            <div class="garage-details">
+                                <h5><a href="garage-details.html">Sheikh Garage</a></h5>
+                                <div class="shortlist">
+                                    <i class="icofont-heart"></i>
+                                    <a href="#"><img src="assets/image/whatsaap-icon.png"></a>
+                                </div>
+                                <h6>Riyadh, Saudi Arabia</h6>
+                                <div class="d-flex">
+                                    <div class="garage-rating-icon">
+                                        <i class="icofont-star"></i>
+                                    </div>
+                                    <div class="garage-rating-count">
+                                        5.0
+                                    </div>
+                                    <div class="review-count">
+                                        (125 ratings)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 col-xl-3">
+                        <div class="garage-wrapper">
+                            <div class="garage-card">
+                                <a href="garage-details.html"><img class="img-fluid"
+                                        src="assets/image/garage-image.jpg"></a>
+                            </div>
+                            <div class="garage-details">
+                                <h5><a href="garage-details.html">Sheikh Garage</a></h5>
+                                <div class="shortlist">
+                                    <i class="icofont-heart"></i>
+                                    <a href="#"><img src="assets/image/whatsaap-icon.png"></a>
+                                </div>
+                                <h6>Riyadh, Saudi Arabia</h6>
+                                <div class="d-flex">
+                                    <div class="garage-rating-icon">
+                                        <i class="icofont-star"></i>
+                                    </div>
+                                    <div class="garage-rating-count">
+                                        5.0
+                                    </div>
+                                    <div class="review-count">
+                                        (125 ratings)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 col-xl-3">
+                        <div class="garage-wrapper">
+                            <div class="garage-card">
+                                <a href="garage-details.html"><img class="img-fluid"
+                                        src="assets/image/garage-image.jpg"></a>
+                            </div>
+                            <div class="garage-details">
+                                <h5><a href="garage-details.html">Sheikh Garage</a></h5>
+                                <div class="shortlist">
+                                    <i class="icofont-heart"></i>
+                                    <a href="#"><img src="assets/image/whatsaap-icon.png"></a>
+                                </div>
+                                <h6>Riyadh, Saudi Arabia</h6>
+                                <div class="d-flex">
+                                    <div class="garage-rating-icon">
+                                        <i class="icofont-star"></i>
+                                    </div>
+                                    <div class="garage-rating-count">
+                                        5.0
+                                    </div>
+                                    <div class="review-count">
+                                        (125 ratings)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 col-xl-3">
+                        <div class="garage-wrapper">
+                            <div class="garage-card">
+                                <a href="garage-details.html"><img class="img-fluid"
+                                        src="assets/image/garage-image.jpg"></a>
+                            </div>
+                            <div class="garage-details">
+                                <h5><a href="garage-details.html">Sheikh Garage</a></h5>
+                                <div class="shortlist">
+                                    <i class="icofont-heart"></i>
+                                    <a href="#"><img src="assets/image/whatsaap-icon.png"></a>
+                                </div>
+                                <h6>Riyadh, Saudi Arabia</h6>
+                                <div class="d-flex">
+                                    <div class="garage-rating-icon">
+                                        <i class="icofont-star"></i>
+                                    </div>
+                                    <div class="garage-rating-count">
+                                        5.0
+                                    </div>
+                                    <div class="review-count">
+                                        (125 ratings)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 col-xl-3">
+                        <div class="garage-wrapper">
+                            <div class="garage-card">
+                                <a href="garage-details.html"><img class="img-fluid"
+                                        src="assets/image/garage-image.jpg"></a>
+                            </div>
+                            <div class="garage-details">
+                                <h5><a href="garage-details.html">Sheikh Garage</a></h5>
+                                <div class="shortlist">
+                                    <i class="icofont-heart"></i>
+                                    <a href="#"><img src="assets/image/whatsaap-icon.png"></a>
+                                </div>
+                                <h6>Riyadh, Saudi Arabia</h6>
+                                <div class="d-flex">
+                                    <div class="garage-rating-icon">
+                                        <i class="icofont-star"></i>
+                                    </div>
+                                    <div class="garage-rating-count">
+                                        5.0
+                                    </div>
+                                    <div class="review-count">
+                                        (125 ratings)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 col-xl-3">
+                        <div class="garage-wrapper">
+                            <div class="garage-card">
+                                <a href="garage-details.html"><img class="img-fluid"
+                                        src="assets/image/garage-image.jpg"></a>
+                            </div>
+                            <div class="garage-details">
+                                <h5><a href="garage-details.html">Sheikh Garage</a></h5>
+                                <div class="shortlist">
+                                    <i class="icofont-heart"></i>
+                                    <a href="#"><img src="assets/image/whatsaap-icon.png"></a>
+                                </div>
+                                <h6>Riyadh, Saudi Arabia</h6>
+                                <div class="d-flex">
+                                    <div class="garage-rating-icon">
+                                        <i class="icofont-star"></i>
+                                    </div>
+                                    <div class="garage-rating-count">
+                                        5.0
+                                    </div>
+                                    <div class="review-count">
+                                        (125 ratings)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 col-xl-3">
+                        <div class="garage-wrapper">
+                            <div class="garage-card">
+                                <a href="garage-details.html"><img class="img-fluid"
+                                        src="assets/image/garage-image.jpg"></a>
+                            </div>
+                            <div class="garage-details">
+                                <h5><a href="garage-details.html">Sheikh Garage</a></h5>
+                                <div class="shortlist">
+                                    <i class="icofont-heart"></i>
+                                    <a href="#"><img src="assets/image/whatsaap-icon.png"></a>
+                                </div>
+                                <h6>Riyadh, Saudi Arabia</h6>
+                                <div class="d-flex">
+                                    <div class="garage-rating-icon">
+                                        <i class="icofont-star"></i>
+                                    </div>
+                                    <div class="garage-rating-count">
+                                        5.0
+                                    </div>
+                                    <div class="review-count">
+                                        (125 ratings)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 col-xl-3">
+                        <div class="garage-wrapper">
+                            <div class="garage-card">
+                                <a href="garage-details.html"><img class="img-fluid"
+                                        src="assets/image/garage-image.jpg"></a>
+                            </div>
+                            <div class="garage-details">
+                                <h5><a href="garage-details.html">Sheikh Garage</a></h5>
+                                <div class="shortlist">
+                                    <i class="icofont-heart"></i>
+                                    <a href="#"><img src="assets/image/whatsaap-icon.png"></a>
+                                </div>
+                                <h6>Riyadh, Saudi Arabia</h6>
+                                <div class="d-flex">
+                                    <div class="garage-rating-icon">
+                                        <i class="icofont-star"></i>
+                                    </div>
+                                    <div class="garage-rating-count">
+                                        5.0
+                                    </div>
+                                    <div class="review-count">
+                                        (125 ratings)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER STARTS -->
+    <footer class="footer-one">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                    <div class="footer-image">
+                        <img src="assets/image/motorgate-logo.png">
+                    </div>
+                    <div class="footer-subtitle">
+                        <h5>Get your car treated well.</h5>
+                    </div>
+                    <div class="copyright">
+                        <p>&copy 2021 Motorgate. All Rights Reserved</p>
+                    </div>
+                    <div class="credit">
+                        <p>Designed & Developed by <a href="https://advancedelaf.com" traget="_blank">Advanced
+                                Elaf</a></p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                    <div class="footer-title">
+                        <h4>Useful Links</h4>
+                    </div>
+                    <ul class="footer-list">
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+
+                        <li><a href="#">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                    <div class="footer-title">
+                        <h4>Partner Links</h4>
+                    </div>
+                    <ul class="footer-list">
+                        <li><a href="#" data-toggle="modal" data-target="#partnerSignupModal">Signup as Partner</a></li>
+                        <li><a href="#">Partner with us</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                    <div class="footer-title">
+                        <h4>Connect with Us</h4>
+                    </div>
+
+                    <div class="footer-social">
+                        <a href="#" target="_blank"><i class="icofont-facebook"></i></a>
+                        <a href="#" target="_blank"><i class="icofont-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="icofont-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="icofont-linkedin"></i></a>
+                        <a href="#">
+                            <img class="footer-brand" src="assets/image/tiktok-icon.svg">
+                        </a>
+                    </div>
+
+                    <div class="footer-title">
+                        <h4>Download Mobile App</h4>
+                    </div>
+                    <div class="app-image">
+                        <a href="#" target="_blank"><img src="assets/image/google-play-store-transparent.png"></a>
+                        <a href="#" target="_blank"><img src="assets/image/apple-store.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-6">
+
+                    </div>
+
+                    <div class="col-6">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER ENDS -->
+</body>
+
+</html>

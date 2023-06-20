@@ -1,0 +1,59 @@
+@media (max-width: 600px) {
+    .parallax-min-garage {
+        min-height: 50vh;
+        background-position: top;
+        background-size: contain;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-banner-title h2 {
+        font-size: 1.5rem;
+    }
+
+    .banner-filter {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .section-title h3 {
+        font-size: 1.25rem;
+    }
+
+    .carousel-content {
+        top: 6rem !important;
+        right: 3rem;
+    }
+
+    .home-carousel img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 991px) {
+
+    div#navbarSupportedContent{
+        background-color: #24A9E2;
+        padding: 0.5rem 1rem;
+        margin-top: 2rem;
+        border-radius: 10px;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        margin: 0.4rem;
+    }
+
+    .carousel-content {
+        top: 12rem;
+        right: 3rem;
+    }
+
+    .carousel-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .cont-info-btm-spacing {
+        margin-bottom: 2rem;
+    }
+}
